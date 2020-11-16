@@ -1,0 +1,180 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+
+    android:padding="25dp"
+
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+
+        android:id="@+id/tvgfg"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-8dp"
+
+        android:gravity="center"
+
+        android:text="GfG"
+
+        android:textAlignment="center"
+
+        android:textColor="#000"
+
+        android:textSize="25sp"
+
+        android:textStyle="italic" />
+
+
+
+    <EditText
+
+        android:id="@+id/etinput"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/tvgfg"
+
+        android:layout_marginTop="5dp"
+
+        android:background="#5B6200EE"
+
+        android:gravity="start" />
+
+
+
+    <!--edit text to accept the input from the user-->
+
+    <LinearLayout
+
+        android:id="@+id/llout"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/etinput"
+
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+
+
+        <Button
+
+            android:id="@+id/btnencode"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="5dp"
+
+            android:background="@color/colorPrimary"
+
+            android:padding="13dp"
+
+            android:text="EnCode"
+
+            android:textColor="#fff"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+
+        <Button
+
+            android:id="@+id/btnclear"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="5dp"
+
+            android:background="@color/colorPrimary"
+
+            android:padding="13dp"
+
+            android:text="clear"
+
+            android:textColor="#fff"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+
+        <Button
+
+            android:id="@+id/btndecode"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:background="@color/colorPrimary"
+
+            android:padding="13dp"
+
+            android:text="decode"
+
+            android:textColor="#fff"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <!--edit text to display output to the user. 
+
+        Edit text is used since the user can copy the 
+
+        text easily if he wants to-->
+
+    <EditText
+
+        android:id="@+id/etoutput"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/llout"
+
+        android:layout_marginTop="10dp"
+
+        android:background="#516200EE"
+
+        android:gravity="start"
+
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout> 
